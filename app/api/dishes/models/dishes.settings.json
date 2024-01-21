@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dishes",
+  "info": {
+    "name": "Dishes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "restaurants": {
+      "collection": "restaurants",
+      "via": "dishes",
+      "dominant": true
+    }
+  }
+}
