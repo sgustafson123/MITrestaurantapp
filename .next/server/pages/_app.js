@@ -7567,7 +7567,7 @@ var pages_jsx = external_react_default.a.createElement;
 
 
 function Home() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
+  const API_URL = "\"http://localhost:1337\";" || false;
   console.log(`URL: ${API_URL}`);
   const {
     0: query,
