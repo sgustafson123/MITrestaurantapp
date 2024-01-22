@@ -6,7 +6,7 @@ function CardSection(props) {
   return (
     <div>
       <div>
-        <label htmlFor="card-element">Credit card</label>
+        <label htmlFor="card-element">Credit Card or Debit Card </label>
 
         <div>
           <fieldset style={{ border: "none" }}>
